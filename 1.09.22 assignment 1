@@ -1,0 +1,16 @@
+#include<stdio.h>
+int isEven(int n)
+{
+	return!(n&1);
+}
+int main()
+{
+	int n;
+	printf("enter a number:");
+	scanf("%d",&n);
+	if(isEven(n))
+	printf("even");
+	else
+	printf("odd");
+    return 0;
+}
