@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],n;
+	printf("Enter n value:");
+	scanf("%d",&n);
+	printf("\nEnter the elements:\n");
+	int i;
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	int len=n-1;
+	show(a,0,len);
+} 
+int show(int a[],int start,int end)
+{
+	if(start>end)
+		return;
+	else
+		printf("%d\t",a[start]);
+		show(a,start+1,end);
+}
