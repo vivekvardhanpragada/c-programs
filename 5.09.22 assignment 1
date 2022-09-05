@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+	int m,n;
+	printf("Enter the start and value:\n");
+	scanf("%d%d",&m,&n);
+	display(m,n);
+}
+void display(int start,int end)
+{
+	if(start>end)
+		return;
+	else
+		printf("%d\t",start);
+		display(start+1,end);
+}
