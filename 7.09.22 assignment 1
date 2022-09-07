@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,k,next,n;
+    printf("enter the number:\n");
+    scanf("%d",&n);
+    if((n==0)||(n==1))
+    printf("yes\n");
+    else{
+    	i=0;
+    	j=1;
+    	k=i+j;
+    	while(k<n)
+    	{
+    		i=j;
+    		j=k;
+    		k=i+j;
+		}
+		if(k==n)
+		printf("yes\n");
+		else
+		printf("no");
+	}
+	return(0);
+}
