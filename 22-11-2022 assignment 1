@@ -1,0 +1,5 @@
+p=int(input("principal amount:"))
+si=int(input("simple interest:"))
+t=int(input("total months:"))
+emi=(si+p)/t
+print('emi',emi)
