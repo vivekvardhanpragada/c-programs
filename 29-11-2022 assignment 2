@@ -1,0 +1,28 @@
+employeeid=int(input("employeeid:"))
+employeename=input("employeename:")
+employeedesignation=input("employeedesignation:")
+basicsalary=int(input("basicsalary:"))
+da=int(input("da:"))
+ta=int(input("ta:"))
+hra=int(input("hra:"))
+netsalary=basicsalary+da+ta+hra
+print("employeeid:",employeeid)
+print("employeename:",employeename)
+print("employeedesignation:",employeedesignation)
+print("basicsalary:",basicsalary)
+print("da:",da)
+print("ta:",ta)
+print("hra:",hra)
+print("netsalary:",netsalary)
+if netsalary>100000:
+    tax=netsalary*10/100
+elif netsalary>50000:
+    tax=netsalary*7/100
+elif netsalary>40000:
+    tax=netsalary*4/100
+elif netsalary>20000:
+    tax=netsalary*2/100
+else:
+    netsalary<20000
+    tax=netsalary*o/100
+print("tax:",tax)    
