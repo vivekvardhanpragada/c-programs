@@ -1,0 +1,31 @@
+cp=150
+rice=300
+wf=250
+s=100
+ir=120
+cphno=input('enter customer phnno:')
+cname=input('enter customer name:')
+cadd=input('enter customer address:')
+cpq=int(input('how many kgs of chilli powder u want:'))
+rq=int(input('how many kgs of rice packet u want:'))
+wfq=int(input('how many kgs of wheat flour u want:'))
+sq=int(input('how many kgs of sugar u want:'))
+irq=int(input('how many kgs of idli ravva u want:'))
+bill=(cpq*cp)+(rq*rice)+(wfq*wf)+(sq*s)+(irq*ir)
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+print('bill without tax:',bill)
+print('tax:',tax)
+bill=bill+tax
+print('customer name:',cname)
+print('customer phnno:',cphno)
+print('customer address:',cadd)
+print('total bill amount:',bill)
