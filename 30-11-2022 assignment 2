@@ -1,0 +1,47 @@
+cp=150
+rice=300
+wf=250
+s=100
+ir=120
+cphno=input('enter customer phnno:')
+cname=input('enter customer name:')
+cadd=input('enter customer address:')
+cpq=int(input('how many kgs of chilli powder u want:'))
+rq=int(input('how many kgs of rice packet u want:'))
+wfq=int(input('how many kgs of wheat flour u want:'))
+sq=int(input('how many kgs of sugar u want:'))
+irq=int(input('how many kgs of idli ravva u want:'))
+coupon=input('enter coupon code in capital letters:')
+bill=(cpq*cp)+(rq*rice)+(wfq*wf)+(sq*s)+(irq*ir)
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+elif coupon=='CHRISTMAS' and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISTMAS' and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISTMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print('bill without tax:',bill)
+print('tax:',tax)
+print('discount:',dis)
+bill=bill+tax-dis
+print('customer name:',cname)
+print('customer phnno:',cphno)
+print('customer address:',cadd)
+print('total bill amount:',bill)
