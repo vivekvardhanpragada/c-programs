@@ -1,0 +1,31 @@
+def big(a,b):
+    if a>b:
+        print('a is big')
+    else:
+        print('b is big')
+a=int(input('a:'))
+b=int(input('b:'))
+big(a,b)
+
+
+def big(a,b):
+    if a>b:
+        return 'a is big'
+    else:
+        return 'b is big'
+a=int(input('a:'))
+b=int(input('b:'))
+print(big(a,b))
+
+
+def big(a,b):
+    if a>b:
+        return True
+    else:
+        return False
+a=int(input('a:'))
+b=int(input('b:'))
+if (big(a,b)):
+    print('a is big')
+else:
+    print('b is big')
